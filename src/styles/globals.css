@@ -1,0 +1,55 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&family=Inter:wght@300;400;600&display=swap');
+
+:root{
+  --brand-dark: #0B2340; /* azul-marinho */
+  --brand-light: #FFFFFF;
+  --black: #000000;
+  --muted: #B7BDC3; /* texto secundário */
+  --nav: #0B2340;
+  --nav-dark: #08182a;
+  --nav-darker: #061324;
+  --card: #FFFFFF;
+  --bg: #F5F7F9;
+  --accent: #D4AF37; /* dourado */
+  --accent-2: #556B2F; /* verde-militar */
+}
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+html,body,#__next{ height:100%; }
+body {
+  font-family: 'Inter', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;
+  background-color: var(--bg);
+  color: var(--brand-dark);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+h1,h2,h3{ font-family: 'Montserrat', 'Inter', sans-serif; }
+
+/* inputs */
+.input { width:100%; border:1px solid #e6e9ee; padding:0.6rem; border-radius:0.5rem; background:white }
+
+/* button primary */
+.btn-primary {
+  background: linear-gradient(180deg,var(--accent), #c99f2f);
+  color: var(--brand-dark);
+  padding: 0.6rem 1.1rem;
+  border-radius: 0.6rem;
+  font-weight: 700;
+}
+
+/* utility for cards */
+.card {
+  background: white;
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 0 6px 18px rgba(8,16,26,0.06);
+}
+
+/* responsive containers */
+.container {
+  max-width: 1060px; margin-left:auto; margin-right:auto; padding-left:1rem; padding-right:1rem;
+}
